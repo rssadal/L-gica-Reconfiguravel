@@ -48,3 +48,53 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name VHDL_FILE Projeto.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_P11 -to CLOCK
+set_location_assignment PIN_C10 -to ENTRADA_1[0]
+set_location_assignment PIN_C11 -to ENTRADA_1[1]
+set_location_assignment PIN_D12 -to ENTRADA_1[2]
+set_location_assignment PIN_C12 -to ENTRADA_1[3]
+set_location_assignment PIN_B12 -to ENTRADA_2[0]
+set_location_assignment PIN_A13 -to ENTRADA_2[1]
+set_location_assignment PIN_A14 -to ENTRADA_2[2]
+set_location_assignment PIN_B14 -to ENTRADA_2[3]
+set_location_assignment PIN_A12 -to SINAL_1
+set_location_assignment PIN_F15 -to SINAL_2
+set_location_assignment PIN_B11 -to LED_REFERENCIA
+set_location_assignment PIN_B8 -to PUSH_OPERACAO
+set_location_assignment PIN_A7 -to PUSH_RESULTADO
+set_location_assignment PIN_J20 -to SAIDA_OPERACAO_DISPLAY[0]
+set_location_assignment PIN_K20 -to SAIDA_OPERACAO_DISPLAY[1]
+set_location_assignment PIN_L18 -to SAIDA_OPERACAO_DISPLAY[2]
+set_location_assignment PIN_N18 -to SAIDA_OPERACAO_DISPLAY[3]
+set_location_assignment PIN_M20 -to SAIDA_OPERACAO_DISPLAY[4]
+set_location_assignment PIN_N19 -to SAIDA_OPERACAO_DISPLAY[5]
+set_location_assignment PIN_N20 -to SAIDA_OPERACAO_DISPLAY[6]
+set_location_assignment PIN_C17 -to RESULTADO_DISPLAY_1[6]
+set_location_assignment PIN_D17 -to RESULTADO_DISPLAY_1[5]
+set_location_assignment PIN_E16 -to RESULTADO_DISPLAY_1[4]
+set_location_assignment PIN_C16 -to RESULTADO_DISPLAY_1[3]
+set_location_assignment PIN_C15 -to RESULTADO_DISPLAY_1[2]
+set_location_assignment PIN_E15 -to RESULTADO_DISPLAY_1[1]
+set_location_assignment PIN_C14 -to RESULTADO_DISPLAY_1[0]
+set_location_assignment PIN_B17 -to RESULTADO_DISPLAY_2[6]
+set_location_assignment PIN_A18 -to RESULTADO_DISPLAY_2[5]
+set_location_assignment PIN_A17 -to RESULTADO_DISPLAY_2[4]
+set_location_assignment PIN_B16 -to RESULTADO_DISPLAY_2[3]
+set_location_assignment PIN_E18 -to RESULTADO_DISPLAY_2[2]
+set_location_assignment PIN_D18 -to RESULTADO_DISPLAY_2[1]
+set_location_assignment PIN_C18 -to RESULTADO_DISPLAY_2[0]
+set_location_assignment PIN_B22 -to RESULTADO_DISPLAY_3[0]
+set_location_assignment PIN_C22 -to RESULTADO_DISPLAY_3[1]
+set_location_assignment PIN_B21 -to RESULTADO_DISPLAY_3[2]
+set_location_assignment PIN_A21 -to RESULTADO_DISPLAY_3[3]
+set_location_assignment PIN_B19 -to RESULTADO_DISPLAY_3[4]
+set_location_assignment PIN_A20 -to RESULTADO_DISPLAY_3[5]
+set_location_assignment PIN_B20 -to RESULTADO_DISPLAY_3[6]
+set_location_assignment PIN_A8 -to RESULTADO_LEDS[0]
+set_location_assignment PIN_A9 -to RESULTADO_LEDS[1]
+set_location_assignment PIN_A10 -to RESULTADO_LEDS[2]
+set_location_assignment PIN_B10 -to RESULTADO_LEDS[3]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
